@@ -49,6 +49,16 @@ a {
   border-radius: 50%;
 }
 
+.nav-list {
+  display: flex;
+}
+
+.contact-logo {
+  display: block;
+  width: 32px;
+  margin: 8px;
+}
+
 /* Main page */
 .main-page {
   background-color: #fafafc;
