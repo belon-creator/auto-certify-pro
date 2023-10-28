@@ -137,7 +137,7 @@ a {
   min-width: 120px;
   max-width: 200px;
   margin: 8px;
-  padding: 8px;
+  padding: 28px 8px 0px 8px;
   background-color: #f1f1f1;
 }
 
