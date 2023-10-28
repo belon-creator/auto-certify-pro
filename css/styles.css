@@ -84,7 +84,7 @@ a {
 
 .banner-btn {
   all: initial;
-  margin: 6px;
+  margin: 8px;
   cursor: pointer;
   padding: 8px;
   border-radius: 5px;
@@ -100,6 +100,9 @@ a {
 
 .accordion-item {
   margin: 5px;
+  border: 1px solid #f8f7f7;
+  border-radius: 6px;
+  background-color: #fff;
 }
 
 .accordion-header {
@@ -133,13 +136,46 @@ a {
   border-radius: 8px;
   min-width: 80px;
   max-width: 200px;
-  margin: 6px;
-  padding: 6px;
+  margin: 8px;
+  padding: 8px;
   background-color: #f1f1f1;
+}
+
+.about-icon {
+  display: block;
+  margin: 0 auto;
 }
 
 .about-list-heading {
   text-align: center;
+}
+
+.article {
+  border: 1px solid #000000;
+  padding: 8px;
+  margin: 8px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.partners {
+  background-color: #e6e3e3;
+  text-align: center;
+}
+
+.partner-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #e6e3e3;
+}
+
+.partner-list-item {
+  margin: 8px;
+  padding: 8px;
+  background-color: #fff;
+  border-radius: 8px;
 }
 
 /* Footer */
