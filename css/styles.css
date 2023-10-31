@@ -75,7 +75,7 @@ a {
   padding-top: 180px;
   padding-bottom: 180px;
   content: "";
-  background-image: url(../img/e-polis2.jpg);
+  background-image: url(../img/E-polis-banner-1170-247px.png);
 
   position: relative;
   background-size: cover;
@@ -204,6 +204,14 @@ a {
 
   .banner-btn {
     font-size: 24px;
+  }
+
+  .banner {
+    background-image: url(../img/E-polis-banner-530-304px.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
   }
 
   .accordion {
