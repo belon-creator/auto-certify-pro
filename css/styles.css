@@ -231,6 +231,11 @@ burger
   text-align: center;
 }
 
+.frame {
+  text-align: center;
+  /* width: 320px; */
+}
+
 .ad-ins-heading {
   text-align: center;
 }
