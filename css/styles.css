@@ -231,9 +231,56 @@ burger
   text-align: center;
 }
 
+/* slider */
+.slider-container {
+  position: relative;
+  width: 320px;
+  height: 100%;
+  display: flex;
+}
+
+.advantages-list {
+  display: flex;
+  overflow: hidden;
+  /* width: 320px; */
+  height: 100%;
+}
+
+.advantages-list-item {
+  width: 300px;
+  height: 200px;
+  text-align: center;
+  padding: 16px;
+  background-color: #4034b4;
+  margin: 8px;
+}
+
+.advantages-list-item.active {
+  display: block;
+}
+
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  cursor: pointer;
+}
+
+.prev-btn {
+  left: 0;
+}
+
+.next-btn {
+  right: 0;
+}
+
+/*  */
+
 .frame {
   text-align: center;
-  /* width: 320px; */
+  min-width: 320px;
 }
 
 .ad-ins-heading {
