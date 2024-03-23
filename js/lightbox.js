@@ -1,31 +1,23 @@
-const slider = document.querySelector(".advantages-list");
-const slides = slider.querySelectorAll("li");
+const slides = document.querySelector(".slides");
+const slide = document.querySelectorAll(".slide");
+const prevBtn = document.querySelector(".prev");
+const nextBtn = document.querySelector(".next");
 
-let currentSlide = 0;
+let counter = 0;
+const size = slide[0].clientWidth;
 
-function showSlide(n) {
-  slides.forEach((slide, i) => {
-    slide.classList.toggle("active", i === n);
-  });
-}
-
-showSlide(currentSlide);
-
-const prevBtn = document.querySelector(".prev-btn");
-const nextBtn = document.querySelector(".next-btn");
-
-prevBtn.addEventListener("click", () => {
-  currentSlide--;
-  if (currentSlide < 0) {
-    currentSlide = slides.length - 1;
-  }
-  showSlide(currentSlide);
-});
+slides.style.transform = `translateX(${-size * counter}px)`;
 
 nextBtn.addEventListener("click", () => {
-  currentSlide++;
-  if (currentSlide === slides.length) {
-    currentSlide = 0;
-  }
-  showSlide(currentSlide);
+  if (counter >= slide.length - 1) return;
+  counter++;
+  slides.style.transition = "transform 0.5s ease-in-out";
+  slides.style.transform = `translateX(${-size * counter}px)`;
+});
+
+prevBtn.addEventListener("click", () => {
+  if (counter <= 0) return;
+  counter--;
+  slides.style.transition = "transform 0.5s ease-in-out";
+  slides.style.transform = `translateX(${-size * counter}px)`;
 });
